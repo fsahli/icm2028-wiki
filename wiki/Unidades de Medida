@@ -21,3 +21,18 @@ Una característica del sistema de mediciones inglés es que para la distancia o
 En la siguiente tabla se encuentran las equivalencias entre los dos sistemas de medidas: 
 ![Tabla(./images/Tabla_unidades_de_medida.png)]
 						(Fuente: Apuntes Julio Méndez, Semana 1) 
+
+### Ejercicio
+¿De que color es el rectángulo de área más grande?
+
+![Tabla(./images/ejercisio_unidades_de_medida.png)]
+
+Se transformará todo a pulgadas y se considerará los prefijos. 
+
+**Área rectángulo naranjo: **  
+$$ Área Naranja = (20 * 10^12 * 12) * (5 * 10^-9) = 1.200.000 pulgadas^2 $$
+
+**Área rectángulo verde: **  
+$$ Área Verde = (10 * 10^9 ) * (5 * 10^-3 * 12) = 600.000.000 pulgadas^2 $$
+
+Por lo tanto, el rectángulo verde es 500 veces más grande que el naranjo. 
