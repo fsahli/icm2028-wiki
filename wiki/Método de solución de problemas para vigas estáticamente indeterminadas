@@ -23,5 +23,91 @@ Los problemas son estáticamente indeterminados cuando el número de incognitas 
 -6. Luego de encontradas las constantes tenemos suficientes ecuaciones para las incognitas y podemos obtener los estados del problema.
 
 
+#### Ejemplo
+
+Sea una viga de largo 1.5 metros de sección transversar rectangular con $$b=10 mm$$,  $$h=20 mm$$ y $$E=70GPa$$. La viga se encuentra empotrada en su extremo izquierdo (punto A) y tiene un aproyo fijo en el extremo derecho (punto B).
+La viga soporta una carga distribuida uniformemente en todo el largo de la viga con amplitud $$w=40$$. Encontrar el momento máximo. 
+
+##### Solución
+
+- **Paso 1, escribir las ecuaciones de equilibrio 1 y 2**
+
+1. $$R_{A}+R_{B}=60
+2. $$M_{A}+1.5*R_{B}=45Nm$$
+
+-**Paso 2, obtener ecuaciones de momentos y esfuerzos de corte internos**
+
+ $$V=40*x-R_{A}$$
+ $$M=-M_{A}+R_{A}*x-20*x^2
+
+-**Paso 3, aplicamos la relación $$E*I*\frac{d^2v}{dx^2}=M$$.
+
+$$E*I*\frac{d^2v}{dx^2}=-M_{A}+R_{A}*x-20*x^2$$
+
+-**Paso 4, integrar la ecuación dos veces con respecto a x.
+
+$$\int \int E*I*\frac{d^2v}{dx^2}  \, dxdx = \int \int -M_{A}+R_{A}*x-20*x^2  \, dxdx$$
+
+- Al resolver esta ecuación se obtiene:
+
+$$E*I*v=-\frac{M_{A}*x^2}{2}+\frac{R_{A}*x^3}{6}-\frac{w*x^4}{24}+c_{1}*x+c_{2}$$
+
+Reemplazando los valores conocidos:
+
+$$466.67v=-\frac{M_{A}*x^2}{2}+\frac{R_{A}*x^3}{6}-\frac{w*x^4}{24}+c_{1}*x+c_{2}$$
+
+-**Paso 5, aplicar condiciones de borde.
+
+-a. en $$x=0$$, $$v=0$$ y $$\frac{dv}{dx}=0$$
+
+Por lo tanto, $$c_{1}=c_{2}=0$$
+
+-b. en $$x=1.5$$, v=0, con esta relación obtenemos la ecuación número 3. 
+
+$$-\frac{M_{A}}{2}+\frac{R_{A}*1.5}{6}=3.75 
+
+Ahora tenemos 3 ecuaciones (1,2 y 3) y 3 incognitas ($$M_{A}$$,$$R_{A}$$ y $$R_{B}$$)
+
+De estas 3 ecuaciones concluimos que:
+
+$$R_{A}=\frac{5}{8}*w*L=37.5N$$
+$$R_{B}=40*1.5-37.5=22.5N$$
+$$M_{A}=45-1.5*22.5=11.25Nm$$
+
+Con estos resultados podemos contruir la función de momento para derivarla e igualarla a 0 para encontrar el máximo. 
+
+$$M=37.5*x-20x^2-11.25$$
+
+$$\frac{dM}{dx}=-40x+37.5
+
+El valor de x que máximiza la función es $$x=0.9375$$ y por lo tanto el momento máximo es:
+
+$$M_{max}=37.5*0.9375-20*0.9375^2-11.25=6.3281NM
+
+
+
+
+#### Referencias
+
+-Crandall, An Introduction To The Machanics Of Solids
+
+
+Autor: Cristian Alguerno
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
