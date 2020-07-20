@@ -64,6 +64,35 @@ $$M=\frac{3}{2}*M_{Y}*(1-\frac{1}{3}*(\frac{\rho}{\rho_(Y)})^2$$
 
 Como podemos observar, esta función tiende a $$\frac{3}{2}*M_{Y}$$ cuando $$\frac{1}{\rho} tiende a infinito.
 
+#### Ejemplo
+Determinar la ecuación de momento para una viga de largo $$L=1m$$ y sección transversar cuadrada de lado $$a=20mm$$ con $$Y=70 MPa$$ y $$E=100 MPa$$ sometida a un momento flector mayor a $$M_{Y}$$.
+
+##### Solución
+
+-Primero calculamos el momento de inercia con respecto al eje z.
+
+$$I_{zz}=\frac{1}{12}*a^4=1.33*10^(-8) m^4$$
+
+-Al inicio de la fluencia:
+
+$$\sigma_{x}=Y= 70MPa$$
+
+$$M_{Y}=\frac{Y*I_{zz}{\frac{h}{2}} =\frac{1}{6}*a^3*Y= 93.33NM$$
+
+$$y_{Y}=\frac{Y*I_{zz}}{M_{Y}}=\frac{1}{2}*a= 10mm$$
+
+$$\rho_{Y}=-\frac{y_{Y}*E}{Y}=-14.29mm
+
+-Por lo tanto, la ecuación de momento es:
+
+$$M= \frac{3}{2}*M_{Y}*(1-\frac{1}{3}*\frac{\rho^2}{\rho_{Y}^2}
+
+$$M= 140-46.67*\frac{\rho^2}{-204.08mm^2}
+
+
+
+
+
 
 #### Referencias
 
