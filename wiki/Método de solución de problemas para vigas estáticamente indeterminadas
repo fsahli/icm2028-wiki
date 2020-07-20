@@ -1,0 +1,27 @@
+### Método de solución de problemas para vigas estáticamente indeterminadas
+
+##### Descripción
+
+Los problemas son estáticamente indeterminados cuando el número de incognitas es mayor al número de ecuaciones de equilibrio.
+
+#### Pasos
+
+-1. Escribir las ecuaciones de equilibrio e identificar las incognitas y los parámetros del problema
+
+-2. Obtener las ecuaciones de esfuerzo cortante y momento internos en función de la posición en el eje x. 
+
+-3. A partir de la ecuación de momento, aplicamos la relación: $$E*I*\frac{d^2v}{dx^2}$$ 
+
+-4. Integramos dos veces esta expresión para obtener la deflexión. 
+
+-5. Eliminamos las constantes con las condiciones las siguientes condiciones de borde:
+
+-a. **La deflexión en los apoyos siempre es 0**
+
+-b. **La derivada de la deflexión en un empotramiento es 0
+
+-6. Luego de encontradas las constantes tenemos suficientes ecuaciones para las incognitas y podemos obtener los estados del problema.
+
+
+
+
