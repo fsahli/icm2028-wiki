@@ -13,7 +13,7 @@ El signo negativo de la ecuación se debe a que el cambio en la deformación del
 ### Ejemplo
 Una barra de acero A-36 tiene las dimensiones mostradas en la imagen. Si se le aplica una fuerza axial de P = 80 kN sobre la barra, determine el cambio en su longitud y el cambio en las dimensiones de su sección transversal después de aplicar la carga. El material se comporta elásticamente (condición necesaria para que se cumpla la constante de Poisson). 
 
-[image:E3F0B510-5E17-4A47-9848-DF5DABB5D7F4-5054-00001D16CB867CD4/Captura de Pantalla 2020-07-18 a la(s) 18.47.26.png]
+![Ilustración](./images/Ejemplo_razon_poisson.png)
 
 El esfuerzo normal en la barra es: 
 
