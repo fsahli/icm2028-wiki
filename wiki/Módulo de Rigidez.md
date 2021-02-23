@@ -4,7 +4,7 @@ El módulo de rigidez G o también llamado Módulo de Elasticidad es una constan
 Es la razón entre el esfuerzo cortante y la deformación constante en el rango del comportamiento plástico. 
 Una forma de verlo más gráficamente es, la primera pendiente (comportamiento plástico) en el gráfico de esfuerzo-deformación cortante. 
 
-[image:3B1F563B-8D80-4DA3-95B9-B0A49AE0A0A6-5054-000023F2F0D6D4DB/Captura de Pantalla 2020-07-18 a la(s) 20.53.10.png]
+![Gráfico](./images/grafico_esfuerzo_deformacion_cortante.png)
 
 Por ende su fórmula sería: (recordar que es sólo para rangos de comportamiento plástico) 
 
